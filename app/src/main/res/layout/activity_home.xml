@@ -92,6 +92,7 @@
                             >
 
                             <ImageView
+                                android:id="@+id/img1"
                                 android:layout_width="115dp"
                                 android:layout_height="155dp"
                                 android:background="@drawable/p9"/>
@@ -106,6 +107,7 @@
                             >
 
                             <ImageView
+                                android:id="@+id/img2"
                                 android:layout_width="115dp"
                                 android:layout_height="155dp"
                                 android:background="@drawable/p7"/>
@@ -120,6 +122,7 @@
                             >
 
                             <ImageView
+                                android:id="@+id/img3"
                                 android:layout_width="115dp"
                                 android:layout_height="155dp"
                                 android:background="@drawable/p6"/>
@@ -135,6 +138,7 @@
                             >
 
                             <ImageView
+                                android:id="@+id/img4"
                                 android:layout_width="115dp"
                                 android:layout_height="155dp"
                                 android:background="@drawable/p3"/>
@@ -149,6 +153,7 @@
                             >
 
                             <ImageView
+                                android:id="@+id/img5"
                                 android:layout_width="115dp"
                                 android:layout_height="155dp"
                                 android:background="@drawable/p8"/>
@@ -163,6 +168,7 @@
                             >
 
                             <ImageView
+                                android:id="@+id/img6"
                                 android:layout_width="115dp"
                                 android:layout_height="155dp"
                                 android:background="@drawable/p1"/>
@@ -177,6 +183,7 @@
                             >
 
                             <ImageView
+                                android:id="@+id/img7"
                                 android:layout_width="115dp"
                                 android:layout_height="155dp"
                                 android:background="@drawable/p4"/>
