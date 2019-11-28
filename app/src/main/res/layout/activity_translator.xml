@@ -99,6 +99,7 @@
             android:background="#FFFFFF"
             android:gravity="top"
             android:lines="8"
+            android:textColor="#000000"
             android:hint="Result will appear here."
             android:inputType="textMultiLine" />
 
