@@ -66,9 +66,28 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        if(menuItem.getItemId() == R.id.translator){
-            Intent intent = new Intent(this,Translator.class);
-            startActivity(intent);
+        switch (menuItem.getItemId()) {
+            case R.id.translator: {
+                Intent intent = new Intent(this,Translator.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.weather: {
+                Intent intent = new Intent(this,Weather.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.currency_converter: {
+                Intent intent = new Intent(this, CurrencyConverter.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.world_clock: {
+                Intent intent = new Intent(this, WorldClock.class);
+                startActivity(intent);
+                break;
+            }
+
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;

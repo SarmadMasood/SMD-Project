@@ -3,9 +3,12 @@
 <group>
     <item android:id="@+id/translator"
         android:title="Language Translator" />
-    <item android:title="Weather" />
-    <item android:title="Currency Converter" />
-    <item android:title="World Clock" />
+    <item android:id="@+id/weather"
+        android:title="Weather" />
+    <item android:id="@+id/currency_converter"
+        android:title="Currency Converter" />
+    <item android:id="@+id/world_clock"
+        android:title="World Clock" />
 </group>
 
 </menu>
