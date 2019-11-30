@@ -23,10 +23,10 @@
             android:layout_height="290dp"
             android:layout_marginLeft="15dp"
             android:background="#FFFFFF"
-            android:lines="13"
             android:gravity="top"
             android:hint="Type something..."
-            android:inputType="textMultiLine" />
+            android:inputType="textMultiLine"
+            android:lines="13" />
 
     </androidx.cardview.widget.CardView>
 
@@ -91,16 +91,16 @@
 
         <EditText
             android:id="@+id/resultText"
-            android:enabled="false"
             android:layout_width="385dp"
             android:layout_height="300dp"
             android:layout_marginLeft="15dp"
             android:background="#FFFFFF"
+            android:enabled="false"
             android:gravity="top"
-            android:lines="8"
-            android:textColor="#000000"
             android:hint="Result will appear here."
-            android:inputType="textMultiLine" />
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:textColor="#000000" />
 
 
     </androidx.cardview.widget.CardView>

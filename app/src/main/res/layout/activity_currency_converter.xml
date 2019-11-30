@@ -4,19 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CurrencyConverter"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".CurrencyConverter">
+
     <androidx.cardview.widget.CardView
         android:layout_width="400dp"
         android:layout_height="100dp"
-        app:cardCornerRadius="15dp"
+        android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:layout_gravity="center">
+        app:cardCornerRadius="15dp">
+
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/pakistan_flag"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pakistan_flag" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="270dp"
@@ -31,17 +33,19 @@
         </com.google.android.material.textfield.TextInputLayout>
 
     </androidx.cardview.widget.CardView>
+
     <androidx.cardview.widget.CardView
         android:layout_width="400dp"
         android:layout_height="100dp"
-        app:cardCornerRadius="15dp"
+        android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:layout_gravity="center">
+        app:cardCornerRadius="15dp">
+
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/uk_flag"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:src="@drawable/uk_flag" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="270dp"
@@ -56,17 +60,19 @@
         </com.google.android.material.textfield.TextInputLayout>
 
     </androidx.cardview.widget.CardView>
+
     <androidx.cardview.widget.CardView
         android:layout_width="400dp"
         android:layout_height="100dp"
-        app:cardCornerRadius="15dp"
+        android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:layout_gravity="center">
+        app:cardCornerRadius="15dp">
+
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/usa_flag"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:src="@drawable/usa_flag" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="270dp"

@@ -11,11 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WorldClock"
-            android:parentActivityName=".Home"/>
-        <activity android:name=".Weather"
+        <activity android:name=".UberBooking"></activity>
+        <activity
+            android:name=".WorldClock"
             android:parentActivityName=".Home" />
-        <activity android:name=".CurrencyConverter"
+        <activity
+            android:name=".Weather"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".CurrencyConverter"
             android:parentActivityName=".Home" />
         <activity
             android:name=".Translator"

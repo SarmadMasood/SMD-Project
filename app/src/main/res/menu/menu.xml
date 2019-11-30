@@ -9,6 +9,8 @@
         android:title="Currency Converter" />
     <item android:id="@+id/world_clock"
         android:title="World Clock" />
+    <item android:id="@+id/ride_with_uber"
+        android:title="Ride with Uber"/>
 </group>
 
 </menu>

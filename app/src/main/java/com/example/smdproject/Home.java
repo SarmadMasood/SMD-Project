@@ -87,7 +87,15 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
                 startActivity(intent);
                 break;
             }
-
+            case R.id.ride_with_uber: {
+                Intent intent = new Intent(this, UberBooking.class);
+                startActivity(intent);
+                break;
+            }
+            default: {
+                startActivity(new Intent(this, this.getClass()));
+                break;
+            }
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
