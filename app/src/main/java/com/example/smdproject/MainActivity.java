@@ -31,9 +31,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        Intent intent = new Intent(this,Translator.class);
-        startActivity(intent);
-
     }
 }
