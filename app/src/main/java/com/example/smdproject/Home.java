@@ -82,6 +82,11 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
                 startActivity(intent);
                 break;
             }
+            case R.id.profile: {
+                Intent intent = new Intent(this, Profile.class);
+                startActivity(intent);
+                break;
+            }
             case R.id.world_clock: {
                 Intent intent = new Intent(this, WorldClock.class);
                 startActivity(intent);
