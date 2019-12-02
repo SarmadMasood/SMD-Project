@@ -12,4 +12,7 @@
         <item>New Zealand</item>
         <item>India</item>
     </string-array>
+    <string name="facebook_app_id">616958315740370</string>
+    <string name="fb_login_protocol_scheme">fb616958315740370</string>
+
 </resources>

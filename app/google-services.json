@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "764874987815",
+    "firebase_url": "https://traveler-1574743650430.firebaseio.com",
+    "project_id": "traveler-1574743650430",
+    "storage_bucket": "traveler-1574743650430.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764874987815:android:3ceb852bec1a6cfad07102",
+        "android_client_info": {
+          "package_name": "com.example.smdproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764874987815-u8d8s3ep9ud3iqlccqabton9hrjo629n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABZULiomXgyJCwMRDjXrjAXY5Zq20BbEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764874987815-u8d8s3ep9ud3iqlccqabton9hrjo629n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

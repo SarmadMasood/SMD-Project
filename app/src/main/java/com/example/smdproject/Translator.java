@@ -60,7 +60,7 @@ public class Translator extends AppCompatActivity {
 
         resultText = findViewById(R.id.resultText);
         translate = findViewById(R.id.translate);
-        translate .setOnClickListener(new View.OnClickListener() {
+        translate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 resultText.setText("waiting...");
