@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/bg"
@@ -9,50 +9,76 @@
     android:orientation="vertical"
     tools:context="com.example.smdproject.PlaceDetail">
 
-    <Button
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginBottom="100dp"
-        android:background="@drawable/roundbutton"
-        android:text="Flights"
-        android:textAllCaps="false"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#F3EFEF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="100dp"
-        android:background="@drawable/roundbutton"
-        android:text="Hotels"
-        android:textAllCaps="false"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#F3EFEF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="590dp"
+            android:background="@drawable/roundbutton"
+            android:text="Flights"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#F3EFEF" />
 
-    <TextView
-        android:id="@+id/review_tap"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:outlineAmbientShadowColor="#000000"
-        android:shadowColor="#000000"
-        android:shadowRadius="10"
-        android:text="Tap for Reviews"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#777"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="590dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/roundbutton"
+            android:text="Hotels"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#F3EFEF" />
+    </RelativeLayout>
 
-    <include layout="@layout/activity_reviews" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        app:behavior_peekHeight="60dp"
+        android:alpha="0.5"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        >
+
+
+        <ImageView
+            android:id="@+id/up"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/arrowup"/>
+
+        <TextView
+            android:id="@+id/review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reviews"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/up"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_below="@+id/review"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

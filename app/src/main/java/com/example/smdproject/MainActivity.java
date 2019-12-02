@@ -32,8 +32,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Intent intent = new Intent(this,Translator.class);
-        startActivity(intent);
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("Places");
+        Review reviews[] = {new Review("Robert", "Beatiful place", "Jan/11/2013"), new Review("John","Must visit once","Dec/01/2015")};
+        Place place = new Place(1,"Paris","https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg?cs=srgb&dl=low-angle-photo-of-eiffel-tower-699466.jpg&fm=jpg",reviews);
+        databaseReference.child("hgg").setValue(new Review("Robert", "Beatiful place", "Jan/11/2013"));
+//        Intent intent = new Intent(this, PlaceDetail.class);
+//        startActivity(intent);
 
     }
 }

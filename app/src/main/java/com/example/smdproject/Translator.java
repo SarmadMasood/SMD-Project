@@ -75,7 +75,6 @@ public class Translator extends AppCompatActivity {
                             JSONArray jsonArray = response.getJSONArray("outputs");
                             JSONObject output = jsonArray.getJSONObject(0);
                             result = output.getString("output");
-                            System.out.println(output.getString("output"));
                             resultText.setText(result);
                         }
                         catch (JSONException e)
