@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 <group>
-    <item android:id="@+id/profile"
-        android:title="Profile" />
     <item android:id="@+id/translator"
         android:title="Language Translator" />
     <item android:id="@+id/weather"
@@ -11,8 +9,8 @@
         android:title="Currency Converter" />
     <item android:id="@+id/world_clock"
         android:title="World Clock" />
-    <item android:id="@+id/ride_with_uber"
-        android:title="Ride with Uber"/>
+    <item android:id="@+id/menuMap"
+        android:title="Map"/>
 </group>
 
 </menu>

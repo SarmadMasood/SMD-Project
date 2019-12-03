@@ -13,7 +13,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
-import com.mancj.slideup.SlideUp;
 
 public class PlaceDetail extends AppCompatActivity {
 
