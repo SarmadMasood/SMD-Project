@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/review_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="11dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <RatingBar
+            android:id="@+id/simpleRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:background="#fff"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:layout_marginLeft="10dp"
+            android:rating="3.5"
+            android:transformPivotX="220dp"/>
+
+        <TextView
+            android:id="@+id/review_desc"
+            android:layout_below="@+id/simpleRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text ="BLØF is a Dutch rock band from Vlissingen, Zeeland which has become popular internationally for its music, its frequent collaborations with bands from other parts of the world, willingness to incorporate other genres into their sound, and focus on bettering the world around them. They have twice won the Edison Award for in the Netherlands. The band consists of Paskal Jakobsen, Peter Slager, Bas Kennis, and Norman Bonink. Former members are Henk Tjoonk and Chris Götte."/>
+
+        <TextView
+            android:id="@+id/review_date"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/review_desc"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="December 1,2018"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

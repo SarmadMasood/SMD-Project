@@ -1,5 +1,6 @@
 package com.example.smdproject;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -35,12 +36,13 @@ public class Profile extends AppCompatActivity {
 
     private CallbackManager callbackManager;
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        //loginButton = findViewById(R.id.login_button);
+        loginButton = findViewById(R.id.login_button);
         txtName = findViewById(R.id.profile_name);
         txtEmail = findViewById(R.id.profile_email);
         circleImageView = findViewById(R.id.profile_pic);

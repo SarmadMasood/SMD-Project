@@ -1,19 +1,22 @@
 package com.example.smdproject;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity(tableName = "place_table")
 public class Place {
-    int id;
-    String name;
-    String imageUrl;
-    List<Review> reviews;
+    @PrimaryKey
+    private int id;
+    private String name;
+    private String imageUrl;
 
     public Place(int id, String name, String imageUrl) {
         this.id = id;
         this.name = name;
         this.imageUrl = imageUrl;
-        this.reviews = new ArrayList<>();
     }
 
     public int getId() {
@@ -40,11 +43,4 @@ public class Place {
         this.imageUrl = imageUrl;
     }
 
-    public List<Review> getReviews() {
-        return reviews;
-    }
-
-    public void setReviews(List<Review> reviews) {
-        this.reviews = reviews;
-    }
 }

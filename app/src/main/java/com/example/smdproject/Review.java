@@ -1,11 +1,33 @@
 package com.example.smdproject;
 
 public class Review {
-    String user;
-    String review;
-    String date;
+    private String placeId;
+    private String rating;
+    private String user;
+    private String review;
+    private String date;
 
-    public Review(String user, String review, String date) {
+    public String getPlaceId() {
+        return placeId;
+    }
+
+    public void setPlaceId(String placeId) {
+        this.placeId = placeId;
+    }
+
+    public String getRating() {
+        return rating;
+    }
+
+    public void setRating(String rating) {
+        this.rating = rating;
+    }
+
+    public Review(){};
+
+    public Review(String id, String rating, String user, String review, String date) {
+        this.rating = rating;
+        this.placeId = id;
         this.user = user;
         this.review = review;
         this.date = date;

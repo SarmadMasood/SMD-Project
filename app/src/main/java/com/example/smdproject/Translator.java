@@ -8,8 +8,10 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -33,13 +35,69 @@ public class Translator extends AppCompatActivity {
     EditText resultText;
     ImageView translate;
     String url, input, result, src, target;
+    Spinner spinner1, spinner2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         src = "en";
         target = "es";
-        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_translator);
         srcText = findViewById(R.id.srcText);
+        spinner1 = findViewById(R.id.spinner1);
+        spinner2 = findViewById(R.id.spinner2);
+
+        spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if(spinner1.getSelectedItem().toString().equalsIgnoreCase("English")){
+                    src = "en";
+                }
+                if(spinner1.getSelectedItem().toString().equalsIgnoreCase("Russian")){
+                    src = "ru";
+                }
+                if(spinner1.getSelectedItem().toString().equalsIgnoreCase("Japanese")){
+                    src = "ja";
+                }
+                if(spinner1.getSelectedItem().toString().equalsIgnoreCase("Hindi")){
+                    src = "hi";
+                }
+                if(spinner1.getSelectedItem().toString().equalsIgnoreCase("Spanish")){
+                    src = "es";
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if(spinner2.getSelectedItem().toString().equalsIgnoreCase("English")){
+                    target = "en";
+                }
+                if(spinner2.getSelectedItem().toString().equalsIgnoreCase("Russian")){
+                    target = "ru";
+                }
+                if(spinner2.getSelectedItem().toString().equalsIgnoreCase("Japanese")){
+                    target = "ja";
+                }
+                if(spinner2.getSelectedItem().toString().equalsIgnoreCase("Hindi")){
+                    target = "hi";
+                }
+                if(spinner2.getSelectedItem().toString().equalsIgnoreCase("Spanish")){
+                    target = "es";
+                }
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
         srcText.addTextChangedListener(new TextWatcher() {
             @Override
