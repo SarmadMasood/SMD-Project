@@ -62,4 +62,5 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-database:4.1.0'
     implementation 'com.google.firebase:firebase-auth:19.2.0'
     implementation 'com.google.firebase:firebase-firestore:21.3.0'
+    implementation 'com.github.androdocs:Simple-HTTP-Request:v1.0'
 }

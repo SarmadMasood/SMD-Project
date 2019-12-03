@@ -160,5 +160,5 @@ public class Translator extends AppCompatActivity {
             }
         });
 
-        }
+    }
 }
