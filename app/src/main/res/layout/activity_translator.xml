@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5D5D5"
+    tools:context=".Translator">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="400dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/srcText"
+            android:layout_width="385dp"
+            android:layout_height="290dp"
+            android:layout_marginLeft="15dp"
+            android:background="#FFFFFF"
+            android:gravity="top"
+            android:hint="Type something..."
+            android:inputType="textMultiLine"
+            android:lines="13" />
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="#8B6CC1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:cardCornerRadius="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#673AB7">
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:entries="@array/country_arrays" />
+
+                <ImageView
+                    android:id="@+id/translate"
+                    android:layout_width="52dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/exchange" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:entries="@array/country_arrays" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <EditText
+            android:id="@+id/resultText"
+            android:layout_width="385dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="15dp"
+            android:background="#FFFFFF"
+            android:enabled="false"
+            android:gravity="top"
+            android:hint="Result will appear here."
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:textColor="#000000" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
