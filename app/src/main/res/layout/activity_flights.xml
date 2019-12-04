@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plane"
+    tools:context=".Flights">
+
+    <TextView
+        android:id="@+id/departtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Depart Date"
+        android:textColor="#000"
+        android:layout_marginTop="50dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+
+        android:layout_below="@+id/departtxt"
+        android:id="@+id/departEditText"
+        android:hint="yyyy-mm-dd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/returntxt"
+        android:layout_below="@+id/departEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return Date"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:layout_below="@+id/returntxt"
+        android:id="@+id/returnEditText"
+        android:hint="yyyy-mm-dd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="(Optional)"
+        android:layout_toRightOf="@+id/returnEditText"
+        android:layout_alignBaseline="@+id/returnEditText"/>
+    <TextView
+        android:layout_marginTop="200dp"
+        android:id="@+id/origintxt"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/returnEditText"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:layout_height="wrap_content"
+        android:text="Origin Place"/>
+
+    <EditText
+
+        android:layout_below="@+id/origintxt"
+        android:id="@+id/originEditText"
+        android:hint="Origin City"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/desttxt"
+        android:layout_below="@+id/originEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return Date"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:layout_below="@+id/desttxt"
+        android:id="@+id/DestEditText"
+        android:hint="Destination City"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"/>
+
+
+
+    <Button
+        android:id="@+id/searchFlights"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="10dp"
+        android:background="@drawable/rounded_button"
+        android:layout_width="200dp"
+        android:text="Search Flights"
+        android:layout_height="70dp"
+        android:layout_below="@id/DestEditText"/>
+
+
+
+
+
+</RelativeLayout>

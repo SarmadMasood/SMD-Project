@@ -22,8 +22,10 @@ public class MainActivity extends AppCompatActivity {
     Button skip;
     DatabaseReference databaseReference;
     RelativeLayout fbLogin;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         databaseReference= FirebaseDatabase.getInstance().getReference();
         setContentView(R.layout.activity_main);

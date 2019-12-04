@@ -14,12 +14,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".searchedFlights"></activity>
+        <activity android:name=".Flights" />
         <activity
             android:name=".Translator"
             android:label="Translator"
             android:parentActivityName=".Home"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity android:name=".SelectTimezonesActivity" />
 
         <meta-data
@@ -34,7 +35,6 @@
             android:label="Map"
             android:parentActivityName=".Home"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".Profile"
             android:parentActivityName=".Home"
