@@ -43,8 +43,13 @@ public class searchedFlights extends AppCompatActivity {
         dest = extras.getString("dest");
 
         dep = "2019-12-06";
-        origin = "SFO-sky";
-        dest = "ORD-sky";
+        if(origin==null || origin==""){
+            origin = "SFO-sky";
+        }
+
+        if(dest==null || dest==""){
+            dest = "ORD-sky";
+        }
 
         flights = new ArrayList<>();
         carriers = new ArrayList<>();
@@ -54,6 +59,7 @@ public class searchedFlights extends AppCompatActivity {
 
 
         url = "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browseroutes/v1.0/US/USD/en-US/"+origin+"/"+dest+"/"+dep;
+        System.out.println(url);
         RequestQueue requestQueue = Volley.newRequestQueue(searchedFlights.this);
         JsonObjectRequest objectRequest = new JsonObjectRequest(
                 Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
@@ -67,7 +73,6 @@ public class searchedFlights extends AppCompatActivity {
                         JSONObject leg = quote.getJSONObject("OutboundLeg");
                         JSONArray carrierIds = leg.getJSONArray("CarrierIds");
                         String id = carrierIds.getString(0);
-                        System.out.println(quote.getString("MinPrice")+leg.getString("DepartureDate"));
                         flights.add(new Flight(id,quote.getString("MinPrice"),leg.getString("DepartureDate")));
                     }
                     JSONArray jcarriers = response.getJSONArray("Carriers");
@@ -77,9 +82,11 @@ public class searchedFlights extends AppCompatActivity {
                     }
 
                     adpter = new FlightsAdpter();
+                    for(int j=0;j<carriers.size();j++){
                     for(int i=0;i<flights.size();i++){
-                        for(int j=0;j<carriers.size();j++){
+
                             if(flights.get(i).getCarrier().equalsIgnoreCase(carriers.get(j).getId())){
+                                System.out.println("Name: "+carriers.get(j).getName());
                                 flights.get(i).setCarrier(carriers.get(j).getName());
 
                             }

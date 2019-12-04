@@ -5,6 +5,8 @@ public class Hotel {
     String rating;
     String imgUrl;
 
+    public Hotel(){};
+
     public Hotel(String name, String rating, String imgUrl) {
         this.name = name;
         this.rating = rating;

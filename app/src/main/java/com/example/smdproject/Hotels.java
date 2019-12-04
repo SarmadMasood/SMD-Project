@@ -13,6 +13,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Hotels extends AppCompatActivity {
@@ -26,6 +27,7 @@ public class Hotels extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hotels);
+        hotels = new ArrayList<>();
         hotelRecycler = findViewById(R.id.hotelsRecycler);
         hotelRecycler.setLayoutManager(new LinearLayoutManager(Hotels.this));
         hotelRecycler.setHasFixedSize(true);

@@ -14,8 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Hotels"></activity>
-        <activity android:name=".searchedFlights" />
+        <activity android:name=".Hotels"
+            android:parentActivityName=".PlaceDetail"></activity>
+        <activity android:name=".searchedFlights"
+            android:parentActivityName=".PlaceDetail"/>
         <activity android:name=".Flights" />
         <activity
             android:name=".Translator"

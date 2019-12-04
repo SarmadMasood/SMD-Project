@@ -59,6 +59,7 @@ public class PlaceDetail extends AppCompatActivity {
     PlaceDatabase localDb;
     TextView name;
     Button toFlights;
+    Button toHotels;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,6 +70,15 @@ public class PlaceDetail extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(PlaceDetail.this,Flights.class);
+                startActivity(intent);
+            }
+        });
+
+        toHotels = findViewById(R.id.toHotels);
+        toHotels.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PlaceDetail.this, Hotels.class);
                 startActivity(intent);
             }
         });

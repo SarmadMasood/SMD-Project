@@ -39,7 +39,5 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        Intent intent = new Intent(this, Hotels.class);
-        startActivity(intent);
     }
 }
