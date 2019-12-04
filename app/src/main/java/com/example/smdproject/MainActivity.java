@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        databaseReference= FirebaseDatabase.getInstance().getReference();
+        databaseReference= FirebaseDatabase.getInstance().getReference().child("Hotels");
         setContentView(R.layout.activity_main);
         skip = findViewById(R.id.skip);
         skip.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-//        Intent intent = new Intent(this, Translator.class);
-//        startActivity(intent);
+        Intent intent = new Intent(this, Hotels.class);
+        startActivity(intent);
     }
 }

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/hotelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <RatingBar
+        android:id="@+id/hotelRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="6dp"
+        android:background="#fff"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:layout_marginLeft="10dp"
+        android:rating="3.5"
+        android:transformPivotX="220dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/hotelRatingBar"
+        android:layout_width="390dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="15dp"
+        >
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/hotelImage"
+            android:src="@drawable/pakistan_flag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

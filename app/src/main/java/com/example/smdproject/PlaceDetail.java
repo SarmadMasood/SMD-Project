@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
@@ -17,6 +18,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -56,11 +58,20 @@ public class PlaceDetail extends AppCompatActivity {
     List<Place> places;
     PlaceDatabase localDb;
     TextView name;
+    Button toFlights;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_place_detail);
         final Bundle extras = getIntent().getExtras();
+        toFlights = findViewById(R.id.toFlights);
+        toFlights.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PlaceDetail.this,Flights.class);
+                startActivity(intent);
+            }
+        });
         id = Integer.parseInt(extras.getString("id"));
 
         name = findViewById(R.id.placeName);
@@ -94,7 +105,6 @@ public class PlaceDetail extends AppCompatActivity {
 
                 for(int i=0;i<contacts.size();i++){
                     if(contacts.get(i).getId().equalsIgnoreCase(extras.getString("id")) && contacts.get(i).getName().equalsIgnoreCase("Fire")){
-                        System.out.println(extras.getString("id")+" fuck yes!!!!");
                         TextView firetxt = (TextView) dialog.findViewById(R.id.fire);
                         firetxt.setText(contacts.get(i).getNumber());
                     }

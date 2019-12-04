@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:padding="10dp">
 
-</LinearLayout>
+<TextView
+    android:id="@+id/carrier"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Carrier"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_below="@+id/carrier"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daparture Date:"
+        android:textSize="18sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019-12-04T00:00:00"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+
+</RelativeLayout>
