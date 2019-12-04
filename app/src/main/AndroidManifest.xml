@@ -17,8 +17,9 @@
         <activity android:name=".Hotels"
             android:parentActivityName=".PlaceDetail"></activity>
         <activity android:name=".searchedFlights"
+            android:parentActivityName=".Flights"/>
+        <activity android:name=".Flights"
             android:parentActivityName=".PlaceDetail"/>
-        <activity android:name=".Flights" />
         <activity
             android:name=".Translator"
             android:label="Translator"
