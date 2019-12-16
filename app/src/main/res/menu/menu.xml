@@ -11,6 +11,8 @@
         android:title="World Clock" />
     <item android:id="@+id/menuMap"
         android:title="Map"/>
+    <item android:id="@+id/menuProfile"
+        android:title="Profile"/>
 </group>
 
 </menu>

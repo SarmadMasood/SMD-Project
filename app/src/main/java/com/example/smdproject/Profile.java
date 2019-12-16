@@ -42,7 +42,7 @@ public class Profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        loginButton = findViewById(R.id.login_button);
+        loginButton = findViewById(R.id.login);
         txtName = findViewById(R.id.profile_name);
         txtEmail = findViewById(R.id.profile_email);
         circleImageView = findViewById(R.id.profile_pic);

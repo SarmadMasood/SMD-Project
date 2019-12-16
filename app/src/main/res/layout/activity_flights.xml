@@ -19,7 +19,7 @@
         />
 
     <EditText
-
+        android:inputType="text"
         android:layout_below="@+id/departtxt"
         android:id="@+id/departEditText"
         android:hint="yyyy-mm-dd"
@@ -40,6 +40,7 @@
         />
 
     <EditText
+        android:inputType="text"
         android:layout_below="@+id/returntxt"
         android:id="@+id/returnEditText"
         android:hint="yyyy-mm-dd"
@@ -65,7 +66,7 @@
         android:text="Origin Place"/>
 
     <EditText
-
+        android:inputType="text"
         android:layout_below="@+id/origintxt"
         android:id="@+id/originEditText"
         android:hint="Origin City"
@@ -86,6 +87,7 @@
         />
 
     <EditText
+        android:inputType="text"
         android:layout_below="@+id/desttxt"
         android:id="@+id/DestEditText"
         android:hint="Destination City"
